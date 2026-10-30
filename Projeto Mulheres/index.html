@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f3f1eb" />
+    <meta name="description" content="Um espaço de fé, reflexão e oração para mulheres cristãs." />
+    <title>Floresça — fé para mulheres cristãs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Cabeçalho">
+      <a class="brand" href="#inicio" aria-label="Floresça, início">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>floresça</span>
+      </a>
+      <nav class="site-nav" aria-label="Navegação principal">
+        <a href="#reflexao">Reflexão</a>
+        <a href="#oracao">Oração</a>
+         <a href="#conectar">Comunidade</a>
+      </nav>
+    </header>
+
+    <main id="inicio">
+      <section class="hero" aria-labelledby="hero-title">
+        <figure class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=2000&q=85"
+            alt="Retrato de uma mulher em um momento tranquilo"
+          />
+          <figcaption>
+            <span class="eyebrow">UM DEVOCIONAL PARA MULHERES</span>
+            <h1 id="hero-title">Fé para florescer<br />em cada estação.</h1>
+            <a class="hero-link" href="#reflexao">Leia a reflexão <span aria-hidden="true">↓</span></a>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="devotional" id="reflexao" aria-labelledby="reflection-title">
+        <div class="devotional-label">
+          <span class="eyebrow">PALAVRA PARA HOJE</span>
+          <span class="date-label">UM PASSO DE CADA VEZ</span>
+        </div>
+        <div class="reflection-copy">
+          <p class="scripture-reference">Salmo 46:5</p>
+          <h2 id="reflection-title">A presença que sustenta</h2>
+          <p>Há dias em que seguir em frente exige mais fé do que força. Você não precisa ter todas as respostas hoje: pode descansar na presença de Deus e dar apenas o próximo passo.</p>
+          <p>Que a sua caminhada seja marcada não pela pressa de chegar, mas pela confiança de que você não está sozinha no caminho.</p>
+        </div>
+      </section>
+
+      <section class="prayer" id="oracao" aria-labelledby="prayer-title">
+        <span class="eyebrow">UM MOMENTO COM DEUS</span>
+        <h2 id="prayer-title">Vamos orar?</h2>
+        <p>Senhor, renova minha fé para este dia. Guia meus passos com sabedoria, acolhe minhas preocupações e ajuda-me a reconhecer tua presença em cada estação. Amém.</p>
+      </section>
+     
+       <section class="community" id="conectar" aria-labelledby="community-title">
+         <div class="community-heading">
+           <span class="eyebrow">CAMINHAMOS JUNTAS</span>
+           <h2 id="community-title">Encontre sua comunidade</h2>
+           <p>Conecte-se, converse ou apoie este espaço.</p>
+         </div>
+       
+         <div class="community-tabs" role="tablist" aria-label="Opções da comunidade">
+           <button id="tab-community" class="community-tab" type="button" role="tab" aria-selected="true" aria-controls="panel-community" data-tab="panel-community">Redes sociais</button>
+           <button id="tab-contact" class="community-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-contact" data-tab="panel-contact" tabindex="-1">Contato</button>
+           <button id="tab-support" class="community-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-support" data-tab="panel-support" tabindex="-1">Pagamentos</button>
+         </div>
+       
+         <div id="panel-community" class="community-panel" role="tabpanel" aria-labelledby="tab-community">
+           <a class="action-link" data-config-link="instagram" aria-disabled="true" tabindex="-1"><span>Instagram</span><span class="action-detail">Link a configurar</span></a>
+           <a class="action-link" data-config-link="facebook" aria-disabled="true" tabindex="-1"><span>Facebook</span><span class="action-detail">Link a configurar</span></a>
+           <a class="action-link" data-config-link="whatsappGroup" aria-disabled="true" tabindex="-1"><span>Grupo de mulheres no WhatsApp</span><span class="action-detail">Convite a configurar</span></a>
+         </div>
+       
+         <div id="panel-contact" class="community-panel" role="tabpanel" aria-labelledby="tab-contact" hidden>
+           <a class="action-link" data-config-link="whatsappContact" aria-disabled="true" tabindex="-1"><span>Conversar pelo WhatsApp</span><span class="action-detail">Contato a configurar</span></a>
+           <a class="action-link" data-config-link="email" aria-disabled="true" tabindex="-1"><span>Enviar um e-mail</span><span class="action-detail">E-mail a configurar</span></a>
+         </div>
+       
+         <div id="panel-support" class="community-panel" role="tabpanel" aria-labelledby="tab-support" hidden>
+           <a class="action-link" data-config-link="pix" aria-disabled="true" tabindex="-1"><span>Contribuir por PIX</span><span class="action-detail">Link ou QR Code a configurar</span></a>
+           <a class="action-link" data-config-link="mercadoPago" aria-disabled="true" tabindex="-1"><span>Pagar pelo Mercado Pago</span><span class="action-detail">Link de pagamento a configurar</span></a>
+           <a class="action-link" data-config-link="otherPayment" aria-disabled="true" tabindex="-1"><span>Outra forma de pagamento</span><span class="action-detail">Link a configurar</span></a>
+         </div>
+       </section>
+     
+       <section class="prayer-request" aria-labelledby="request-title">
+         <div class="request-copy">
+           <span class="eyebrow">VOCÊ NÃO PRECISA CAMINHAR SOZINHA</span>
+           <h2 id="request-title">Compartilhe um pedido de oração</h2>
+           <p>Seu pedido será privado e não ficará visível para outras visitantes. Evite incluir informações pessoais ou dados de terceiros.</p>
+         </div>
+         <form id="prayer-form">
+           <label for="prayer-message">Seu pedido</label>
+           <textarea id="prayer-message" name="request" rows="4" maxlength="2000" required placeholder="Escreva apenas o que se sentir confortável em compartilhar."></textarea>
+           <label class="consent-label" for="prayer-consent">
+             <input id="prayer-consent" name="consent" type="checkbox" required />
+             <span>Concordo em enviar este pedido para que a equipe possa orar por mim.</span>
+           </label>
+           <button class="submit-button" id="prayer-submit" type="submit" disabled>Enviar pedido</button>
+           <p class="form-status" id="prayer-status" role="status" aria-live="polite">O envio será ativado após configurar o banco de dados.</p>
+         </form>
+       </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#inicio">floresça</a>
+      <span>FÉ, CUIDADO E PROPÓSITO</span>
+    </footer>
+     <script src="site-config.js"></script>
+     <script src="script.js"></script>
+  </body>
+</html>
